@@ -372,7 +372,7 @@ main{
 }
 
 .pursuit{
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 .myPursuit{
   font-size: 37px;
@@ -424,7 +424,6 @@ main{
 }
 .design{
   font-size: 31px;
-  margin-top: 20px;
 }
 .design svg{
   margin-left: 25px;
