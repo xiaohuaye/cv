@@ -216,7 +216,7 @@ main{
   margin: 0 25px 25px 0;
 }
 .project {
-  padding: 25px 25px 5px 25px;;
+  padding: 5px 25px 5px 25px;;
 }
 .title-wrapper{
   display: flex;
@@ -260,10 +260,16 @@ main{
   height: 1em;
 }
 .project .content-wrapper .row{
+  margin-bottom: 5px;
   display: flex;
 }
 .project .content-wrapper p{
-  width: 420px;
+  width: 460px;
+  display: flex;
+}
+.project .content-wrapper p>span:first-child{
+  min-width: 5em;
+  display: inline-block;
 }
 
 .education{
@@ -365,6 +371,7 @@ main{
   height: 1em;
 }
 .work .content-wrapper .row{
+  margin-bottom: 5px;
   display: flex;
 }
 .work .content-wrapper p{
@@ -417,6 +424,7 @@ main{
   height: 1em;
 }
 .pursuit .content-wrapper .row{
+  margin-bottom: 5px;
   display: flex;
 }
 .pursuit .content-wrapper p{
