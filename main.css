@@ -1,10 +1,11 @@
-*{margin:0;padding:0;}
+*{margin:0;padding:0;font-family: Quotes, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;}
 *{box-sizing: border-box;} 
 *::before{box-sizing:border-box;}
 *::after{box-sizing:border-box;}
 a{text-decoration: none;}
 .icon {
-  width: 1em; height: 1em;
+  width: 1em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
@@ -31,15 +32,15 @@ aside{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 300px;
+  width: 260px;
   background: white;
-  margin: 28px;
+  margin: 20px;
 }
 .ID-card{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 300px;
+  width: 260px;
   background: #0C83AD;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -48,7 +49,7 @@ aside{
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 260px;
+  height: 240px;
 }
 .avatar-wrapper{
   display: flex;
@@ -88,29 +89,18 @@ aside{
   font-weight: bold;
   width: 100%;
   letter-spacing: 16.5px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .name>span{
   letter-spacing: 3px;
-}
-.line>.dui{
-  margin-left: 3px;
-  margin-right: 3px;
-  font-size: 22px;
-  font-weight: bolder;
-}
-.line-col{
-  font-size: 30px;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 .job{
   color:white;
   font-size: 16px;
   display: flex;
   justify-content:space-between;
-  width: 249px;
-  letter-spacing: 5px;
+  width: 202px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 .job>span{
@@ -164,17 +154,19 @@ aside{
   font-size: 20px;
   letter-spacing: 5px;
   margin-bottom: 10px;
+  margin-left: 22px;
 }
 .myInf,.myskills,.myCon,.myBlog{
   margin-left: 3px;
   margin-right: 3px;
   font-size: 22px;
   font-weight: bolder;
-  fill: #8F1563;
+  fill: #0C83AD;
 }
 .personal .inf{
   color: black;
   letter-spacing: 5px;
+  margin-left: 22px;
 }
 .personal .inf>:first-child{
   color:#878787;
@@ -184,15 +176,17 @@ aside{
 }
 .skills .type{
   color: black;
+  margin-left: 22px;
+  font-weight: bolder;
 }
 .skills .star{
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom:  8px;
+  margin: 10px 22px 20px;
 }
 .contact .inf{
   color: black;
+  margin-left: 22px;
 }
 .contact .inf>:first-child{
   color:#878787;
@@ -200,16 +194,16 @@ aside{
 }
 .contact .inf>span:nth-child(2n){
   color: black;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 
 
 /* main */
 main{
-  width: 625px;
+  width: 690px;
   background:#FFFFFF;
-  margin: 28px 28px 28px 0;
+  margin: 20px 20px 20px 0;
 }
 .myProject{
   font-size: 37px;
@@ -250,15 +244,7 @@ main{
   bottom: 0;
   transform: translate(-50%,0);
 }
-.project .content-wrapper h2{
-  padding-bottom: 10px;
-}
-.project .content-wrapper .gou{
-  font-size: 20px;
-  margin: 5px 10px 5px 5px;
-  width: 1em;
-  height: 1em;
-}
+
 .project .content-wrapper .row{
   margin-bottom: 5px;
   display: flex;
@@ -270,6 +256,35 @@ main{
 .project .content-wrapper p>span:first-child{
   min-width: 5em;
   display: inline-block;
+}
+
+.project .content-wrapper .gou{
+  font-size: 20px;
+  margin: 5px 10px 5px 5px;
+  width: 1em;
+  height: 1em;
+}
+.project .content-wrapper .row{
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.project .content-wrapper .company{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.project .content-wrapper .company-work-title{
+  flex: 1;
+}
+
+.project .content-wrapper .company-work-content{
+  flex: 6;
+}
+
+.project .content-wrapper .company-work-content li{
+  margin-bottom: 5px;
 }
 
 .education{
@@ -309,9 +324,11 @@ main{
   bottom: 0;
   transform: translate(-50%,0);
 }
-.education .content-wrapper h2{
-  padding-bottom: 10px;
+
+.education .content-wrapper p{
+  width: 420px;
 }
+
 .education .content-wrapper .gou{
   font-size: 20px;
   margin: 5px 10px 5px 5px;
@@ -319,10 +336,14 @@ main{
   height: 1em;
 }
 .education .content-wrapper .row{
+  margin-bottom: 5px;
   display: flex;
 }
-.education .content-wrapper p{
-  width: 420px;
+
+.education .content-wrapper .company{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 10px;
 }
 
 .work{
@@ -361,9 +382,7 @@ main{
   bottom: 0;
   transform: translate(-50%,0);
 }
-.work .content-wrapper h2{
-  padding-bottom: 10px;
-}
+
 .work .content-wrapper .gou{
   font-size: 20px;
   margin: 5px 10px 5px 5px;
@@ -374,8 +393,23 @@ main{
   margin-bottom: 5px;
   display: flex;
 }
-.work .content-wrapper p{
-  width: 420px;
+
+.work .content-wrapper .company{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.work .content-wrapper .company-work-title{
+  flex: 1;
+}
+
+.work .content-wrapper .company-work-content{
+  flex: 6;
+}
+
+.work .content-wrapper .company-work-content li{
+  margin-bottom: 5px;
 }
 
 .pursuit{
@@ -414,31 +448,48 @@ main{
   bottom: 0;
   transform: translate(-50%,0);
 }
-.pursuit .content-wrapper h2{
-  padding-bottom: 10px;
-}
 .pursuit .content-wrapper .gou{
   font-size: 20px;
   margin: 5px 10px 5px 5px;
   width: 1em;
   height: 1em;
 }
+
 .pursuit .content-wrapper .row{
   margin-bottom: 5px;
   display: flex;
 }
-.pursuit .content-wrapper p{
-  width: 420px;
+
+.pursuit .content-wrapper .company{
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 10px;
 }
+
+.pursuit .content-wrapper .company-work-content li{
+  margin-bottom: 5px;
+}
+
 .design{
   font-size: 31px;
+  display: flex;
 }
 .design svg{
   margin-left: 25px;
   margin-right: 25px;
 }
-.design a{
+.design span{
   font-size: 16px;
+}
+
+.introduce .row {
+  display: flex;
+  align-items: center;
+}
+
+.introduce .row p {
+  display: flex;
+  align-items: baseline;
 }
 
 
